@@ -1,0 +1,19 @@
+<p>home works!</p>
+<form>
+    <label for="Username">Username</label><br>
+    <input type="text" aria-placeholder="Username" name="Username"[(ngModel)]="User.Username"><br>
+    <label for="Password">Password</label><br>
+    <input type="password" aria-placeholder="Password" name="Password" [(ngModel)]="User.Password"><br>
+    <label for="Confirmpassword">Confirmpassword</label><br>
+    <input type="password" aria-placeholder="Confirmpassword" name="Confirmpassword" [(ngModel)]="User.Confirmpassword"><br>
+    <label for="Usertype">Usertype</label><br><br>
+    <select>
+        <option value="User">User</option>
+        <option value="Admin">Admin</option>
+    </select><br><br>
+    
+    <input type="button"  value="Submit" (click)="Submit()"><br><br>
+    Already Have An Account?<br><br>
+    
+    <a [routerLink]="['/login']">login </a><br>
+</form>

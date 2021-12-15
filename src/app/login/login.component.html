@@ -1,0 +1,13 @@
+<p>login works!</p>
+<form>
+    <label for="Username">Username</label><br>
+    <input type="text" aria-placeholder="Username" name="Username" [(ngModel)]="User.Username">
+    <br>
+    <label for="Password">password</label><br>
+    <input type="password" aria-placeholder="Password" name="Password" [(ngModel)]="User.Password">
+    <br>
+    <input type="button" value="Login" (click)="Login()">
+    <br><br>
+    <!-- <a href="register">Register now</a> -->
+    <button><a routerLink="/home">addnew</a></button>
+</form>

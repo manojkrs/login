@@ -1,0 +1,58 @@
+<p>user works!</p>
+<table>
+    <div>
+        <tr>
+            <label for="Country">Country</label>
+            <select name="Country" [(ngModel)]=Users.Country>
+                <option value="India">India</option>
+                <option value="Srilanka">Srilanka</option>
+                <option value="pakistan">pakistan</option>
+            </select>
+        </tr>
+    </div>
+    <div>
+        <tr>
+            <input type="number" placeholder="countrypopulation" [(ngModel)]="Users.Countrypopulation">
+        </tr>
+    </div>
+    <div>
+        <tr>
+            <label for="State">State</label>
+            <select name="State" [(ngModel)]=Users.State>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="pondichery">pondichery</option>
+                <option value="kerala">kerala</option>
+            </select>
+        </tr>
+    </div>
+    <div>
+        <tr>
+            <input type="number" placeholder="Statepopulation" [(ngModel)]="Users.Statepopulation">
+        </tr>
+    </div>
+    <div>
+        <input type="button" value="Add" (click)="Add()">
+    </div>
+</table>
+    <table>
+    
+        <tr>
+            <th>Country</th>
+            <th>CountryPopulation</th>
+            <th>State</th>
+            <th>Statepopulation</th>
+            
+        </tr>
+        
+    
+
+    
+        <tr *ngFor="let u of User ">
+            <td>{{u.Country}}</td>
+            <td>{{u.Countrypopulation}}</td>
+            <td>{{u.State}}</td>
+            <td>{{u.Statepopulation}}</td>
+            
+        </tr>
+    
+</table>
